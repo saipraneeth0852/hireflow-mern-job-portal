@@ -11,8 +11,6 @@ dotenv.config({});
 
 const app = express();
 
-connectDB()
-
 // middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -36,7 +34,14 @@ app.use("/api/v1/job", jobRouter);
 app.use("/api/v1/application", applicantionRouter);
 
 
-app.listen(PORT, () => {
-    
-    console.log(`Server running at port ${PORT}`);
-})
+const startServer = async () => {
+    await connectDB();
+    app.listen(PORT, () => {
+        console.log(`Server running at port ${PORT}`);
+    });
+}
+
+startServer().catch((error) => {
+    console.error("Failed to start server:", error.message);
+    process.exit(1);
+});
