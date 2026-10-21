@@ -41,7 +41,7 @@ function Profile() {
                                         ?
                                         <AvatarImage src={user?.profile?.profilePhoto} alt="profile" />
                                         :
-                                        <AvatarImage src="https://github.com/shadcn.png" alt="profile" />
+                                        <AvatarImage src="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 80 80%22%3E%3Crect width=%2280%22 height=%2280%22 fill=%22%23e5e7eb%22/%3E%3Ccircle cx=%2240%22 cy=%2231%22 r=%2214%22 fill=%22%239ca3af%22/%3E%3Cpath d=%22M12 76a28 24 0 0 1 56 0z%22 fill=%22%239ca3af%22/%3E%3C/svg%3E" alt="profile" />
                                 }
                             </Avatar>
 
