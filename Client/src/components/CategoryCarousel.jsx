@@ -14,7 +14,7 @@ const category = [
     "Graphic Designer",
     "Full Stack Developer",
     "DevOps Engineer",
-    "Cyber Security ",
+    "Cyber Security",
 ]
 
 function CategoryCarousel() {
@@ -36,12 +36,12 @@ function CategoryCarousel() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{}}
         >
-            <Carousel className="w-full max-sm:max-w-[234px] sm:max-w-xl mx-auto my-10">
+            <Carousel className="w-full max-w-[260px] sm:max-w-md md:max-w-xl lg:max-w-2xl mx-auto my-10" opts={{ align: "start", dragFree: true }}>
                 <CarouselContent>
                     {
                         category.map((cat, index) => (
-                            <CarouselItem key={index} className="basis-[60%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4 ">
-                                <Button onClick={() => searchJobHandler(cat)} variant="outline" className="rounded-full cursor-pointer hover:scale-105 duration-600 transition-all">
+                            <CarouselItem key={index} className="basis-auto">
+                                <Button onClick={() => searchJobHandler(cat)} variant="outline" className="rounded-full cursor-pointer whitespace-nowrap hover:bg-accent transition-colors">
                                     {cat}
                                 </Button>
                             </CarouselItem>
