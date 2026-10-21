@@ -1,3 +1,5 @@
+> **Credits:** Based on [shubham79a/job-portal](https://github.com/shubham79a/job-portal) by Shubham Kumar (the original `author` field in `Server/package.json` is kept). Modified and rebranded as HireFlow by Sai Praneeth Gowd.
+
 # 💼 Job Portal App
 
 A modern, full-stack Job Portal built with the powerful **MERN stack** — enabling both job seekers (students) and recruiters to connect seamlessly. With a clean, animated, and responsive UI, this platform allows users to explore opportunities, post jobs, and manage applications with ease.
