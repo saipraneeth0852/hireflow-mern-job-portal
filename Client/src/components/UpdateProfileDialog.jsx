@@ -142,12 +142,13 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="file" className="text-right" >Resume</Label>
+                                <Label htmlFor="file" className="text-right" >Resume (upload disabled in demo)</Label>
                                 <Input
                                     id="file"
                                     className="col-span-3"
                                     name="file"
                                     type="file"
+                                    disabled
                                     accept="application/pdf"
                                     // value={input.file}
                                     onChange={fileChangeHandler}
