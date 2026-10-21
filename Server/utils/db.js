@@ -8,6 +8,7 @@ const connectDB = async () => {
         let mongoUri = process.env.MONGODB_URI;
 
         if (!mongoUri) {
+            if (process.env.NODE_ENV === 'production') throw new Error('MONGODB_URI is required in production (no in-memory fallback)');
             memoryServer = await MongoMemoryServer.create({
                 instance: { dbName: "hireflow" },
             });
