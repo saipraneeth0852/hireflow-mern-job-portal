@@ -157,10 +157,11 @@ const Signup = () => {
             </RadioGroup>
 
             <div className='flex items-center gap-2'>
-              <Label>Profile</Label>
+              <Label>Profile photo (upload disabled in demo)</Label>
               <Input
                 accept="image/*"
                 type="file"
+                disabled
                 onChange={changeFileHandler}
                 className="cursor-pointer"
               />

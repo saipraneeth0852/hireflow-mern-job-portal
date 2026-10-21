@@ -145,9 +145,10 @@ const CompanySetup = () => {
                             />
                         </div>
                         <div>
-                            <Label>Company Logo</Label>
+                            <Label>Company Logo (upload disabled in demo)</Label>
                             <Input
                                 type="file"
+                                disabled
                                 accept="image/*"
                                 onChange={changeFileHandler}
                             />
