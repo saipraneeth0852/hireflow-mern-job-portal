@@ -25,6 +25,7 @@ const Navbar = () => {
                 withCredentials: true
             })
             if (response.data.success) {
+                localStorage.removeItem('hireflow_token');
                 dispatch(setUser(null));
                 navigate('/');
                 toast.success(response.data.message);

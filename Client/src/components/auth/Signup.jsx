@@ -96,7 +96,7 @@ const Signup = () => {
               value={input.fullname}
               name="fullname"
               onChange={changeEventHandler}
-              placeholder="Shubham Kumar"
+              placeholder="Your full name"
             />
           </div>
           <div className='my-2'>

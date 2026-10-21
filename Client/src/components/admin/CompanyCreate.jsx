@@ -54,7 +54,7 @@ const CompanyCreate = () => {
                 <Input
                     type="text"
                     className="my-2 "
-                    placeholder="Jobhunt, Microsoft etc."
+                    placeholder="HireFlow, Microsoft etc."
                     onChange={(e) => setCompanyName(e.target.value)}
                 />
                 <div className='flex items-center gap-2 my-10'>
