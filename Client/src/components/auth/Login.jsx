@@ -41,6 +41,7 @@ const Login = () => {
         withCredentials: true,
       });
       if (response.data.success) {
+        if (response.data.token) localStorage.setItem('hireflow_token', response.data.token);
         dispatch(setUser(response.data.user));
         navigate("/");
         toast.success(response.data.message);

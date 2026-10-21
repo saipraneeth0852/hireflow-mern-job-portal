@@ -1,5 +1,5 @@
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/shared/Navbar'
 import Login from './components/auth/Login'
 import Signup from './components/auth/Signup'
@@ -16,7 +16,7 @@ import PostJob from './components/admin/PostJob'
 import JobApplicants from './components/admin/JobApplicants'
 import ProtectedRoute from './components/admin/ProtectedRoute'
 
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([
 
   // for student role
 
